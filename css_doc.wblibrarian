@@ -1,0 +1,222 @@
+background%%%<h2>Background Property</h2>
+<h3> What does it do? </h3>
+<p>Changes the background color / image of an element.</p>
+<h3>Example</h3>
+<p>
+.element { background: #F00; }
+
+<br /> <br />
+Note: the example above sets every tag with the class &quot;element&quot; to have their backgrounds become red.$$$background-color%%%<h2>Background Color</h2>
+<h3> What does it do? </h3>
+<p>Changes the background color of an element.</p>
+<h3>Example</h3>
+<p>
+.element { background-color: #F00; }
+
+<br /> <br />
+Note: the example above sets every tag with the class &quot;element&quot; to have their backgrounds become red.$$$background-image%%%<h2>Background Image</h2>
+<h3> What does it do? </h3>
+<p>Changes the background image of an element.</p>
+<h3>Example</h3>
+<p>
+.element { background-image: src( 'image.jpg' ); }
+
+<br /> <br />
+Note: the example above sets every tag with the class &quot;element&quot; to have their backgrounds display the loaded image$$$color%%%<h2>Color</h2>
+<h3> What does it do? </h3>
+<p>Changes the foreground color of your content. ( an example of an element that uses the foreground color are texts )</p>
+<h3>Example</h3>
+<p>
+.red { color: #F00; }
+</p>
+<Br />
+
+Note: the example above sets the foreground color of "red" to red.$$$border%%%<h2>Border Property</h2>
+<h3> What does it do? </h3>
+<p>Sets the border properties of an element. <br />
+you can also setup individual borders by using this format <br />
+border-* { where * could be: left, right, top, bottom } </p>
+</p>
+<h3>Example</h3>
+<p>
+ .dashed { border: 1px dashed black; }
+</p>
+
+<Br /> <br />
+
+Note: elements with the class "dashed" will now have a dashed border surrounding it's elements.$$$z-index%%%<h2>Z-index</h2>
+<h3> What does it do? </h3>
+<p>Changes the draw hierarchy of your elements. </p>
+<h3>Example</h3>
+.overlay { z-index: 10; }
+<br /> <br />
+Note: the elements with the class "overlay" will be drawn last
+<Br /> <br />
+Higher z-index values = draws last <br />
+Lower z-index values = draws first$$$font-family%%%<h2>Font-family</h2>
+<h3> What does it do? </h3>
+<p>This sets the font for an element.</p>
+<h3>Example</h3>
+<p>
+ .coolSerif { font-family: serif; }
+</p>
+<br />
+Note: all of the elements that uses the "coolSerif" class will now use the "serif" font$$$font-size%%%<h2>Font-size</h2>
+<h3> What does it do? </h3>
+<p>Sets the size of an element's font rendering.</p>
+<h3>Example</h3>
+<p>
+ .massiveText { font-size: 70px; }
+</p>
+$$$font-weight%%%<h2>Font-weight</h2>
+<h3> What does it do? </h3>
+<p>Changes the weight of an element's font ( It could be lighter or heavier )</p>
+<h3>Example</h3>
+.thinFont { font-weight: lighter; }
+<Br /> <br />
+Note: the element "thinFont" will now use the "lighter" font weight setting.$$$margin%%%<h2>Margin Property</h2>
+<h3> What does it do? </h3>
+<p>Sets an element's margin property. <br />
+you can also setup individual margins by using this format <br />
+margin-* { where * could be: left, right, top, bottom } </p>
+<h3>Example</h3>
+.dock { margin-top: 25px; }
+<Br /> <br />
+Note: the dock elements now has a 25 pixel top margin.$$$padding%%%<h2>Padding Property</h2>
+<h3> What does it do? </h3>
+<p>Sets an element's padding value <br />
+you can also setup individual padding by using this format <br />
+padding-* { where * could be: left, right, top, bottom } </p>
+</p>
+<h3>Example</h3>
+<p>&lt;
+tagname
+&gt;
+ give an example here
+&lt;
+/tagname
+&gt;</p>$$$text-align%%%<h2>Text-align</h2>
+<h3> What does it do? </h3>
+<p>Sets an element's text alignment property. <br />
+possible values: left, center, right.
+</p>
+<h3>Example</h3>
+<p>
+ .centerText { text-align: center; }
+</p>
+<br /> <Br />$$$border-radius%%%<h2>Border-radius</h2>
+<h3> What does it do? </h3>
+<p>Set's the radius of an element's border.  This could also be used to "round" the corners of an element.</p>
+<h3>Example</h3>
+.semiRoundButton { border-radius: 8px; }$$$opacity%%%<h2>Opacity</h2>
+<h3> What does it do? </h3>
+<p>Set's the transparency of an element. <br />
+Values range from 0 to 1   <br />
+( to convert percentage -> [n / 100] )
+</p>
+<h3>Example</h3>
+.coolTransparentThing { opacity: 0.6; }
+<br /> <br />
+Note: this will set all "coolTransparentThing" elements to be semi-transparent.$$$float%%%<h2>Float</h2>
+<h3> What does it do? </h3>
+<p>Make the element float in * { left, or right }</p>
+<h3>Example</h3>
+<p>
+ .floatingBox { float: right; }
+</p>$$$transition%%%<h2>Property Transition</h2>
+<h3> What does it do? </h3>
+<p>Allows you to set the speed of the "fading" property transitions.</p>
+<h3>Example</h3>
+.button { transition: background .25s; } <br />
+.button:hover { background: #00F; } <br /> <Br />
+
+Note: <br />
+Elements with the "button" class will fade into blue when the cursor hovers over them.$$$position%%%<h2>Element Position</h2>
+<h3> What does it do? </h3>
+<p>Sets the element's position property <Br />
+ possible values: { relative, absolute, fixed }
+</p>
+<h3>Example</h3> 
+<p>
+ .navigationBar { position: fixed; }
+</p>
+<br /> 
+Note: this will make elements with the "navigationBar" class stick  to their position on the screen regardless of the current scrollbar position.$$$element frame%%%<h2>Element Frame</h2>
+<h3> What does it do? </h3>
+<p>Allows you to adjust an element's frame <br /> <br />
+ Properties
+ <table>
+   <tr>
+      <td> left</td>
+      <td>Sets the left edge of the frame</td>
+   </tr>
+   <tr>
+      <td> top</td>
+      <td>Sets the top edge of the frame</td>
+   </tr>
+  <tr>
+      <td> width</td>
+      <td>Sets the absolute width the frame</td>
+   </tr>
+  <tr>
+      <td> height</td>
+      <td>Sets the absolute width of the frame</td>
+   </tr>
+ </table>
+</p>
+<h3>Example</h3>
+#box { left: 50px; top: 50px; width: 50px; height: 50px; position: absolute; }
+<br /> <br />
+
+Note: this modifies the element box's frame and position property.$$$filter%%%<h2>CSS Filters</h2>
+<h3> What does it do? </h3>
+<p>Applies a filter to an element  <br /> <br />
+  to make this work across browsers, you may need to use a browser prefix. <Br /> <br />
+ -webkit-filter : for Safari, Chrome, modern Opera, and modern Firefox <br />
+ -moz-filter : for older Firefox / Mozilla browsers <br />
+ -o-filter: for older Opera browsers <br />
+ -ms-filter: for Internet explorer
+</p>
+<h3>Example</h3>
+.disabled { filter: blur( 10px ); }
+<Br /> <Br />
+Note: This applies a blur filter on "disabled" elements.$$$box-shadow%%%<h2>Box Shadows</h2>
+<h3> What does it do? </h3>
+<p>Allows you to create a "drop shadow" effect on elements.  <Br /> <br />
+  Usage: <br />
+  box-shadow: xOffset, yOffset, radius, color;
+ </p>
+<h3>Example</h3>
+.box { box-shadow: 0 0 32px rgba( 0, 0, 0, 0.5 ); }
+
+<Br /> <Br />
+Note: "box" elements will now have a  black drop shadow effect.$$$letter-spacing%%%<h2>Letter Spacing</h2>
+<h3> What does it do? </h3>
+<p>Adjusts the letter spacing of text in your elements.</p>
+<h3>Example</h3>
+#C { letter-spacing: 4px; }
+<br/> <Br />
+Note: sets C's letter spacing to 4 pixels.$$$word-spacing%%%<h2>Word Spacing</h2>
+<h3> What does it do? </h3>
+<p>Similar to letter-spacing, except it only adjusts the spacing for words.</p>
+<h3>Example</h3>
+#B { word-spacing: 4px; }$$$text-decoration%%%<h2>Text Decoration</h2>
+<h3> What does it do? </h3>
+<p>Applies a decoration to text in your element.</p>
+<h3>Example</h3>
+<p>
+ #A { text-decoration: underline; }
+</p>
+<br />
+Note: this will underline A's texts.$$$vertical-align%%%<h2>Vertical Alignment</h2>
+<h3> What does it do? </h3>
+<p>Adjusts the vertical alignment of an element.</p>
+<h3>Example</h3>
+.navigationPane { vertical-align: top; }
+<br /> <Br $$$text-shadow%%%<h2>Text Shadows</h2>
+<h3> What does it do? </h3>
+<p>Applies a drop shadow to texts.  ( it's parameters are similar to box-shadow's )</p>
+<h3>Example</h3>
+<p>
+ #cool { text-shadow: 1px 1px 1px black; }
+</p>$$$

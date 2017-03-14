@@ -1,0 +1,229 @@
+alert%%%<h2>alert( text )</h2>
+<h3> What does it do? </h3>
+<p>Displays a message box with content</p>
+<h3>Example</h3>
+alert( "Hello World" );
+
+<br /> <br />
+Note: The example above will show "Hello World" in a message box.$$$document.getElementById%%%<h2>document.getElementById( id )</h2>
+<h3> What does it do? </h3>
+<p>Returns the address of an element with the given ID.</p>
+<h3>Example</h3>
+var text = document.getElementById( "text" ); <br />
+text.innerHTML = "Hello World";
+<br /> <Br />
+
+Note: The example above will change the text of the element "text" to "Hello World"$$$Number%%%<h2>Number( x )</h2>
+<h3> What does it do? </h3>
+<p>You can use this to convert strings into number.</p>
+<h3>Example</h3>
+<p>
+ p = "100"; <br />
+n = Number( p );
+</p>
+<br />
+Note: this converts "100"  (string) to 100 ( number )$$$String%%%<h2>String( x )</h2>
+<h3> What does it do? </h3>
+<p>Convert a variable into a string.</p>
+<h3>Example</h3>
+<p>
+ n = 100; <br />
+ p = String( n );
+</p>$$$Array%%%<h2>Array( i? )</h2>
+<h3> What does it do? </h3>
+<p>This allows you to create a new array object <br />
+( you can leave the i parameter blank, if you want to initialize an empty array )
+</p>
+<h3>Example</h3>
+<p>
+ var list = new Array( "Orange", "Apple", "List" );
+</p>
+<br />
+Note: this creates a new array containing the items: ( Orange, Apple, and List )$$$length%%%<h2>Variable Length</h2>
+<h3> What does it do? </h3>
+<p>This is commonly used to get the length of strings and arrays.</p>
+<h3>Example</h3>
+<p>
+ var A = "hello world"; <br />
+ var B = A.length; <br />
+ alert( B );
+</p>$$$.innerHTML%%%<h2>Element's inner HTML property</h2>
+<h3> What does it do? </h3>
+<p>You can use this to modify / extract the HTML content of a selected property.</p>
+<h3>Example</h3>
+<p>
+ var itemList = document.getElementById( "list" ); <br />
+ var newContent = "Substitute!"; <br />
+ itemList.innerHTML = newContent;
+</p>$$$window.location%%%<h2>Window Location</h2>
+<h3> What does it do? </h3>
+<p>This allows you to access / modify the current location of the browser window.  ( e.g: URL redirection  )</p>
+<h3>Example</h3>
+<p>
+ window.location = "http://www.my.site";
+</p>$$$style%%%<h2>Element Style</h2>
+<h3> What does it do? </h3>
+<p>Sets a selected element's CSS style programmatically.</p>
+<h3>Example</h3>
+<p>
+ list = document.getElementById( "list" ); <br />
+ list.style = "color: red;";
+</p>
+<br />
+Note: this set's the element "list"'s foreground color to red.$$$Declaring functions%%%<h2>Function Declaration</h2>
+<h3> Why do this? </h3>
+<p>Functions can speed up your development by putting commonly used operations inside a recyclable code block.</p>
+<h3>Example</h3>
+<p>
+function showMessage( text ) { <br />
+ alert( text ); <br />
+}
+<br /><br />
+showMessage( "Hello World!" );
+</p>
+<br /$$$Documenting your script%%%<h2>Javascript Comments</h2>
+<h3> What does it do? </h3>
+<p>This allows you to document your code for easier maintenance.</p>
+<h3>Example</h3>
+<p>
+/* this is a long comment <br />
+    that encompasses multiple lines <br />
+*/ <br /> <br />
+ var x = 2; //this sets x to 2
+</p>
+<br />
+Note: "//comment" - single line comment <Br />
+           "/* comment */" -  multiline comment$$$If Statements%%%<h2>"If" Conditional Statements</h2>
+<h3> Why do this? </h3>
+<p>Conditional statements allow you to control the flow of your script.</p>
+<h3>Example</h3>
+<p>
+ a = true; <br />
+ if ( a ) { <br />
+ alert( "A is true!" ); <br />
+ } else { <br />
+  alert( "A is not true!" ); <br />
+ }
+</p>
+
+<br /> <br /> 
+Note:  if statements allow you to use a boolean variable to choose between a set of code blocks.
+<Br /> <br /> <br />
+<b>format:</b>
+ <p>if ( statement )<br /> {<br/> actionTrue<br/> } else <br/>{<br/> actionFalse<br/> } <br /> <br />
+<b>Adding clauses</b>
+<p> if ( statement )<br/> {<br/> trueAction<br/> } else if ( otherstatement ) { trueAction }<br /> else { <br/>bothFalseAction<br/> } </p>$$$Loops%%%<h2>Loops</h2>
+<h3> Why do this? </h3>
+<p>Using loops allows you to iterate an action progressively. <br /><br />
+<b> Types of loops </b> <br /> <br />
+For loops ( format ) : ( setting ; condition ; iteration ) { actions } <br />
+While loops ( format ) : ( condition ) { actions } <br />
+Do - While loops ( format ) : do { actions } while ( condition ) 
+</p>
+<h3>Example</h3>
+<p>
+var list = document.getElementById( "list" ); <br /> <br />
+for ( var x = 1; x <= 10; ++x ) { <br />
+ list.innerHTML += "Loop count: " + x + "&lt;br /&gt;";<br />
+}
+</p>
+<br />
+Note: this will repeat the loop action 10 times$$$Switch statements%%%<h2>Switch Statements</h2>
+<h3> What does it do? </h3>
+<p>"Switch" work similarly to "if" conditional statements.</p>
+<h3>Example</h3>
+var x = 2; <br /> <br />
+switch ( x ) { <Br />
+ case 1: <br />
+  alert( "This will appear if the value of x is one" ); <br />
+ break; <br /> <Br />
+case 2: <br />
+  alert( "This will appear if the value of x is two" ); <br />
+ break; <br /> <Br />
+case 3: <br />
+  alert( "This will appear if the value of x is three" ); <br />
+ break; <br /> <Br />
+default: <br />
+ break; <br /> 
+}$$$Simple Structures%%%<h2>Creating simple structures in Javascript</h2>
+<h3> Why do this? </h3>
+<p>This allows you to group related variables together.</p>
+<h3>Example</h3>
+<p>
+ function Dog( name, age ) { <br />
+   this.name = name; <br />
+   this.age = age; <br /> <br /> 
+  
+   this.showInfo = function( ) { <br />
+    alert( "This dog's name is " + this.name + " and it is " + this.age + " years old." ); <br />
+ } <br />} <br />
+
+ var a_dog = new Dog( "Brown", 8 ); <br />
+ a_dog.showInfo( ); <br />
+</p>
+
+Note:  creating structures allows you to quickly reuse and group data together.  The variable "a_dog"
+is a "Dog" structure ( it will inherit all of it's variables and functions ) $$$Functions that returns a value%%%<h2>Functions with a return value</h2>
+<h3> What does it do? </h3>
+<p>you can use this to get the output of the function's processed data.</p>
+<h3>Example</h3>
+function add( a, b ) { <br />
+ return a + b; <br />
+} <br /> <br />
+alert( add( 1, 1 ) );
+
+<br /> <br /> 
+Note: this will return the process of the function "add" ( a = 1, b = 1 => 1 + 1 = 2 )$$$confirm%%%<h2>confirm( question )</h2>
+<h3> What does it do? </h3>
+<p>It allows you to query the user for confirmation.</p>
+<h3>Example</h3>
+<br />
+if ( confirm( "Are you sure?" ) ) { <br />
+ alert( "The user had agreed" ); <br />
+} else { <br />
+ alert( "The user had not agreed" ); <br />
+}$$$Ternary Operators%%%<h2>Ternary Operators</h2>
+<h3> What does it do? </h3>
+<p>This works similarly to an "if" statement <br />
+<b> Format:</b> <br /> <br />
+ ( condition ? ifTrue : ifFalse );
+</p>
+<h3>Example</h3>
+var happiness = 40; <br />
+var mood = ( happiness  &lt; 20 ? "Happy!" : "Not Happy" ); <br />
+alert( "I am " + mood ); <br /> <br />
+
+Note: this is a simplified version of this: <br /> <br />
+var happiness = 40; <br /> 
+var mood; <br /><br />
+
+if ( happiness &lt; 20 ) { <br />
+mood = "Happy!"; <br />
+} else { <br />
+ mood = "Not Happy"; <br />
+} <br /> <br />
+
+alert( "I am " + mood ); <br /> <br />
+
+$$$prompt%%%<h2>prompt( question )</h2>
+<h3> What does it do? </h3>
+<p>This allows you to query the user for information.</p>
+<h3>Example</h3>
+var name = prompt( "Who are you?" ); <br />
+alert( "Hello " + name + "!" ); <br />
+$$$Date%%%<h2>Date()</h2>
+<h3> What does it do? </h3>
+<p>Allows you to retrieve time/date parameters from the system.</p> <br />
+Properties: <br />
+get* ( where * is the property you want to get ) <br />
+( e.g: getDay()  = day ( in week ), getDate() = day ( in month ), getHour() = hour, getMonth() = month )
+<h3>Example</h3>
+<p>
+var months = new Array( "Jan","Feb","Mar","Apr","May","Jun","jul","Aug","Sept","Oct","Nov","Dec" ); <br /> <br />
+var today = new Date(); <br />
+var currentDay = today.getDate(); <Br />
+var currentMonth = today.getMonth(); <br />
+var currentYear = 1900 + Number( today.getYear() ); <Br /> <Br />
+alert( "Today is " + months[currentMonth] + " - " + currentDay + " - " + currentYear ); <br /> 
+</p>
+Note: This will print the current date$$$

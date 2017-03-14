@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon.png</file>
+        <file>gettingstarted.htm</file>
+        <file>css_elements.wblist</file>
+        <file>html_elements.wblist</file>
+        <file>js_elements.wblist</file>
+        <file>html_doc.wblibrarian</file>
+        <file>css_doc.wblibrarian</file>
+        <file>js_doc.wblibrarian</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,218 @@
+The Header Tags%%%<h2>The Header Tags</h2>
+<h3> What does it do? </h3>
+<p>Header tags allows you to show text in varying sizes, this is usually used for &quot;headlines&quot; or titles / subtitles on your webpage.</p>
+<h3>Example</h3>
+<p>&lt;h1&gt;
+ Headline A
+&lt;/h1&gt;</p>
+
+Note: header tag names: h1,h2,h3,h4,h5,h6$$$The Paragraph Tag%%%<h2>The Paragraph Tag</h2>
+<h3> What does it do? </h3>
+<p>This allows you to put bodies of texts inside your webpage.  This is ideal for sentences, paragraphs, and long quotes.</p>
+<h3>Example</h3>
+<p>&lt;p&gt; <br />
+ The heads all turned to darkness when the sun engulfs the sky <br />
+ The brightness overwhelming to the unadjusted eyes <br />
+ we're taught to follow blindly like there's nothing here to see </br />
+ a slave to some philosophy will somehow make you free <br />
+ and you will be so gladly handcuffed enlightened from above...
+<br />&lt;/p&gt;</p>$$$The Anchor Tag%%%<h2>The Anchor Tag</h2>
+<h3> What does it do? </h3>
+<p>This allows you to link multiple webpages together.</p>
+<h3>Example</h3>
+<p>&lt;a href="https://www.facebook.com"&gt;
+ Go to Facebook&lt;/a&gt;</p>
+
+Note: put the link in the &quot;href&quot; property of this tag.$$$The Marquee Tag%%%<h2>The Marquee Tag</h2>
+<h3> What does it do? </h3>
+<p>The content inside this tag will scroll horizontally.</p>
+<h3>Example</h3>
+<p>&lt;marquee&gt;
+ I am a long text, therefore I will scroll on your screen!&lt;/marquee&gt;</p>$$$The Span Tag%%%<h2>The Span Tag</h2>
+<h3> What does it do? </h3>
+<p>This is similar to the paragraph tag, except it doesn't create a newline after it's declaration.</p>
+<h3>Example</h3>
+<p>&lt;span&gt;
+ I don't create newlines!&lt;/span&gt;</p>
+
+Note: span tags can also be used to separate text from other elements.$$$The Divider Tag%%%<h2>The Divider Tag</h2>
+<h3> What does it do? </h3>
+<p>This is commonly used for layouts, however it could also be used to &quot;divide&quot; content from each other.</p>
+<h3>Example</h3>
+<p>&lt;div&gt;
+ <br />
+  &lt;p&gt; This is a new paragraph &lt;/p&gt; <br />&lt;/div&gt;</p>$$$The Article Tag%%%<h2>The Article Tag</h2>
+<h3> What does it do? </h3>
+<p>This works just like the paragraph tag.</p>
+<h3>Example</h3>
+<p>&lt;article&gt;
+ Breaking News! I don't have any new news!
+&lt;/article&gt;</p>$$$The Table Tag%%%<h2>The Table Tag</h2>
+<h3> What does it do? </h3>
+<p>This allows you to display a table of data, separated by rows and columns.</p>
+<h3>Example</h3>
+<p>&lt;table&gt; <br />
+ &lt;tr&gt; <br />
+ &lt;td&gt;Name&lt;/td&gt; <br />
+ &lt;td&gt;Gender&lt;/td&gt; <br />
+ &lt;td&gt;Age&lt;/td&gt; <br />
+ &lt;/tr&gt; <Br />
+&lt;tr&gt; <br />
+ &lt;td&gt;Josh Morris&lt;/td&gt; <br />
+ &lt;td&gt;Male&lt;/td&gt; <br />
+ &lt;td&gt;24&lt;/td&gt; <br />
+ &lt;/tr&gt; <Br />
+&lt;tr&gt; <br />
+ &lt;td&gt;Anna Ramsey&lt;/td&gt; <br />
+ &lt;td&gt;Female&lt;/td&gt; <br />
+ &lt;td&gt;20&lt;/td&gt; <br />
+ &lt;/tr&gt; <Br />
+&lt;/table&gt;</p>
+
+<h3> This Shows: </h3>
+< table > 
+<tr> 
+<td>Name</td> 
+<td>Gender</td> 
+<td>Age</td> 
+</tr> 
+<tr> 
+<td>Josh Morris</td> 
+<td>Male</td> 
+<td>24</td> 
+</tr> 
+<tr> 
+<td>Anna Ramsey</td> 
+<td>Female</td> 
+<td>20</td> 
+</tr> 
+< /table > $$$The Table Row Tag%%%<h2>The Table Row Tag</h2>
+<h3> What does it do? </h3>
+<p>Creates a new row in a table</p>
+<h3>Example</h3>
+&lt;table&gt; <br />
+ &lt;tr&gt; <br />
+ &lt;td&gt;Name&lt;/td&gt; <br />
+ &lt;td&gt;Gender&lt;/td&gt; <br />
+ &lt;td&gt;Age&lt;/td&gt; <br />
+ &lt;/tr&gt; <Br />&lt;/table&gt; <br />
+
+<br />
+Note: ( Table Row = tr )$$$The Table Data Tag%%%<h2>The Table Data Tag</h2>
+<h3> What does it do? </h3>
+<p>Creates a new column in a table</p>
+<h3>Example</h3>
+&lt;table&gt; <br />
+ &lt;tr&gt; <br />
+ &lt;td&gt;Name&lt;/td&gt; <br />
+ &lt;td&gt;Gender&lt;/td&gt; <br />
+ &lt;td&gt;Age&lt;/td&gt; <br />
+ &lt;/tr&gt; <Br />&lt;/table&gt; <br />
+
+<br />
+Note: ( Table Data = td )$$$The Meta Tag%%%<h2>The Meta Tag</h2>
+<h3> What does it do? </h3>
+<p>This is used to set properties on your webpage.</p>
+<h3>Example</h3>
+<p>&lt;
+meta name =&quot;viewport&quot; content=&quot;width=device-width&quot; />
+
+<Br /> <br />
+
+Note: The code above will fit your website into the size of the viewing device's width.$$$The Link Tag%%%<h2>The Link Tag</h2>
+<h3> What does it do? </h3>
+<p>Links a file to your webpage.</p>
+<h3>Example</h3>
+<p>&lt;
+link rel=&quot;stylesheet&quot; href=&quot;mystyle.css&quot; />
+<br /> <br />
+
+Note: The example above links an external stylesheet to your webpage.$$$The HTML Tag%%%<h2>The HTML Tag</h2>
+<h3> What does it do? </h3>
+<p>This is the first tag you should use when creating a page.  It basically encapsulates your entire document.</p>
+<h3>Example</h3>
+<p>&lt;html&gt; <br />
+ ... your entire document ... <br />
+&lt;/html&gt;</p>$$$The Style Tag%%%<h2>The Style Tag</h2>
+<h3> What does it do? </h3>
+<p>This allows you to declare Cascading Style Sheet styles on your webpage.</p>
+<h3>Example</h3>
+<p>&lt;style&gt; <br />
+ body { <br /> color: #FFF; <br /> background: #000; <br />} <br />
+&lt;/style&gt;</p>
+
+<br /> <br />
+Note: The example above sets your webpage's background and foreground color to black and white.$$$The Script Tag%%%<h2>The Script Tag</h2>
+<h3> What does it do? </h3>
+<p>Allows you either link or create javascript on your webpage.</p>
+<h3>Example</h3>
+<p>&lt;script&gt;
+ alert( &quot;Hello World!&quot; );
+&lt;/script&gt;</p>
+
+<Br /> <br />
+Note: The example above creates a message box containing the words &quot;Hello World&quot;
+<Br />
+<Br />
+Note: To link an external script to your page, use the &quot;src&quot; property
+
+<h3>Example</h3>
+<p>&lt;
+script src=&quot;myscript.js&quot;
+&gt;
+&lt;
+/script
+&gt;</p>$$$The Comment Tag%%%<h2>The Comment Tag</h2>
+<h3> What does it do? </h3>
+<p>This allows you to document your page for future use.</p>
+<h3>Example</h3>
+<p>&lt;!---
+ this is a comment --&gt;</p>
+
+<Br /> <Br />
+Note: Do not forget to close your comment with &quot;-->&quot;  If you fail to close the tag, the markup after
+the comment declaration will be considered as a part of the comment tag.$$$The Title Tag%%%<h2>The Title Tag</h2>
+<h3> What does it do? </h3>
+<p>This allows you to set the name of your webpage.</p>
+<h3>Example</h3>
+<p>&lt;title&gt;
+ My really cool page!
+&lt;/title&gt;</p>$$$The Body Tag%%%<h2>The Body Tag</h2>
+<h3> What does it do? </h3>
+<p>The body tag encompasses most of the content you put inside your webpage.</p>
+<h3>Example</h3>
+<p>&lt;body&gt; <Br />
+  ...enter your document content here...
+<br />&lt;/body&gt;</p>$$$The Head Tag%%%<h2>The Head Tag</h2>
+<h3> What does it do? </h3>
+<p>The head tag encompasses the property settings on your page.</p>
+<h3>Example</h3>
+<p>&lt;head&gt; <br />
+ ...enter properties here...
+<br />
+&lt;/head&gt;</p>
+
+<br /> <br />
+Note: title, link, meta, and script tags are usually placed inside the head tag.$$$The Form Tag%%%<h2>The Form Tag</h2>
+<h3> What does it do? </h3>
+<p>This allows you to create forms that queries the user for information.</p>
+<h3>Example</h3>
+<p>&lt;form&gt;
+ give an example here
+&lt;/form&gt;</p>$$$The Input Tag%%%<h2>The Input Tag</h2>
+<h3> What does it do? </h3>
+<p>This allows you to create elements that can receive information through user interaction.</p>
+<h3>Example</h3>
+<p>&lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;&quot; /&gt;</p>
+
+<Br /> <Br />
+Note: Common input types: { text, password, number }
+$$$The Image Tag%%%<h2>The Image Tag</h2>
+<h3> What does it do? </h3>
+<p>This allows you to load and display images to your webpage. </p>
+<h3>Example</h3>
+<p>&lt;
+img src=&quot;a_cat.jpg&quot; alt=&quot;a cat&quot; width=200px height = auto
+/&gt;</p>
+
+Note: The example above loads the file &quot;a_cat.jpg&quot; and sets it's size to 200xAuto ( Auto = scale based on width )$$$

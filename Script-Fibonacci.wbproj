@@ -1,0 +1,28 @@
+WBPROJ~<html>
+	<head>
+	</head>
+	<body onload="main()">
+		<h3>First 15 numbers in the Fibonacci sequence:</h3>
+		<h4 id="fib"></h4>
+	</body>
+</html>~h4 {
+ text-align: center;
+}
+
+body {
+ background: #EEE;
+ color: #555;
+}~var x = 5;
+
+function main( ) {
+	var a = 0;
+	var b = 1;
+	
+	for ( var x = 0; x < 15; ++x ) {
+     var c = a + b;
+     b = a;
+     a = c;
+     document.getElementById( "fib" ).innerHTML += "|" + c + "|";
+   } 
+
+}

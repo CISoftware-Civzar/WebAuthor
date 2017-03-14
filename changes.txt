@@ -1,0 +1,34 @@
+[03/13/17]
+> Performance tweaks added to WBEditorView's line numbering ( it is still not functional though )
+> Line numbers only work on unwrapped text at the moment
+> added auto-indentation to WBCodeView
+> Code Completion is now functional ( although it is still a bit buggy )
+
+[03/12/17]
+> Updated the website links
+> Search feature added in the Librarian widget
+> Updated Librarian documents
+> Added search feature for the "WebAuthor" widget
+> Improved search feature
+> WBCodeViews should now be used with the WBEditorView widget
+> started experimenting with Line numbers in WBEditorWidget
+
+[03/11/17]
+> Created the Librarian widget
+> Created the first version of the HTML Librarian document
+> Created the first version of the CSS Librarian document
+> Created the first version of the JS Librarian document
+
+[03/10/17]
+> Created changes.txt and readme.txt
+> Split the code into multiple files
+> Created the WBCodeView class
+> Changed the widget type of the editors to WBCodeView
+> Added *_elements.wblist files
+> Created the WBCodeCompletionModel class [not functional yet]
+> Added sliders to the color picker tool
+> Color Picker Tool automatically copies the color to the clipboard
+
+:ISSUES:
+> Code completion isn't functional yet
+> Color picker tool can cause crash
