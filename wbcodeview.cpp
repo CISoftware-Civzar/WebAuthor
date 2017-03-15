@@ -22,6 +22,7 @@ void WBCodeView::keyPressEvent(QKeyEvent *event) {
             case Qt::Key_Escape:
             case Qt::Key_Backspace:
             case Qt::Key_Delete:
+            case Qt::Key_Space:
                 _completer->popup()->close();
             break;
         default:
@@ -37,11 +38,11 @@ void WBCodeView::keyPressEvent(QKeyEvent *event) {
         }
         QPlainTextEdit::keyPressEvent( event );
 
-        /*if ( editor_cursor_text().length() > 3 ) {
+        if ( editor_cursor_text().length() > 3 ) {
             if ( !_completer->popup()->isVisible() ) {
                 showCodeCompletion();
             }
-        }*/
+        }
 
         if ( event->key() == Qt::Key_Return || event->key() == Qt::Key_Enter ) {
             QString tabs = "";
@@ -111,7 +112,7 @@ void WBCodeView::focusInEvent(QFocusEvent *event) {
 void WBCodeView::handleComplete(QString text) {
     QTextCursor editor_cursor = textCursor();
 
-    if ( editor_cursor_text().length() > 0 ) {
+    /*if ( editor_cursor_text().length() > 0 ) {
         editor_cursor.movePosition( QTextCursor::Left );
         editor_cursor.movePosition( QTextCursor::EndOfWord );
     }
@@ -122,6 +123,13 @@ void WBCodeView::handleComplete(QString text) {
     editor_cursor.insertText( text.right( delta ) );
     setTextCursor( editor_cursor );
     _completer->setCompletionPrefix( "" );
+    */
+
+    //new method
+    editor_cursor.select( QTextCursor::WordUnderCursor );
+    editor_cursor.insertText( text );
+    editor_cursor.movePosition( QTextCursor::EndOfWord );
+    setTextCursor( editor_cursor );
 }
 
 void WBCodeView::unselectText() {
@@ -141,5 +149,6 @@ void WBCodeView::showCodeCompletion() {
     QRect rect = cursorRect();
     rect.setWidth( this->width() - 100 );
     _completer->setCompletionPrefix( editor_cursor_text() );
+    _completer->popup()->setCurrentIndex( _completer->completionModel()->index(0,0) );
     _completer->complete(rect);
 }

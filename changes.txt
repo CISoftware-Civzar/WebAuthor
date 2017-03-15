@@ -1,3 +1,7 @@
+[03/14/17]
+> Improved Code completion
+> Added more Javascript code completion terms
+
 [03/13/17]
 > Performance tweaks added to WBEditorView's line numbering ( it is still not functional though )
 > Line numbers only work on unwrapped text at the moment
